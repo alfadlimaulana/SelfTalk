@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD2C29942BF6ED3100179518 /* SelfTalk Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CD2C29932BF6ED3100179518 /* SelfTalk Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD2C29992BF6ED3100179518 /* SelfTalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C29982BF6ED3100179518 /* SelfTalkApp.swift */; };
+		CD2C299B2BF6ED3100179518 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C299A2BF6ED3100179518 /* ContentView.swift */; };
+		CD2C299D2BF6ED3200179518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2C299C2BF6ED3200179518 /* Assets.xcassets */; };
+		CD2C29A02BF6ED3200179518 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2C299F2BF6ED3200179518 /* Preview Assets.xcassets */; };
+		CD2C29B22BF75D5A00179518 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C29B12BF75D5A00179518 /* Router.swift */; };
+		CD2C29B42BF75FD800179518 /* SelfTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C29B32BF75FD800179518 /* SelfTalkView.swift */; };
+		CD2C29B72BF7660E00179518 /* SDWebImageLottieCoder in Frameworks */ = {isa = PBXBuildFile; productRef = CD2C29B62BF7660E00179518 /* SDWebImageLottieCoder */; };
+		CD2C29BA2BF7664500179518 /* LottieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C29B92BF7664500179518 /* LottieViewModel.swift */; };
+		CD2C29BD2BF78F9300179518 /* soundwave.json in Resources */ = {isa = PBXBuildFile; fileRef = CD2C29BC2BF78F9300179518 /* soundwave.json */; };
+		CD6F98C22BF8E23D00A8D73C /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F98C12BF8E23D00A8D73C /* HealthViewModel.swift */; };
+		CD6F98C42BFA056B00A8D73C /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F98C32BFA056B00A8D73C /* TimerManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD2C29952BF6ED3100179518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD2C29872BF6ED3000179518 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD2C29922BF6ED3100179518;
+			remoteInfo = "SelfTalk Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD2C29A62BF6ED3200179518 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CD2C29942BF6ED3100179518 /* SelfTalk Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CD2C298D2BF6ED3100179518 /* SelfTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelfTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2C29932BF6ED3100179518 /* SelfTalk Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SelfTalk Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD2C29982BF6ED3100179518 /* SelfTalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTalkApp.swift; sourceTree = "<group>"; };
+		CD2C299A2BF6ED3100179518 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CD2C299C2BF6ED3200179518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD2C299F2BF6ED3200179518 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CD2C29B12BF75D5A00179518 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		CD2C29B32BF75FD800179518 /* SelfTalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTalkView.swift; sourceTree = "<group>"; };
+		CD2C29B92BF7664500179518 /* LottieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewModel.swift; sourceTree = "<group>"; };
+		CD2C29BC2BF78F9300179518 /* soundwave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = soundwave.json; sourceTree = "<group>"; };
+		CD6F98C02BF8DA2600A8D73C /* SelfTalk Watch AppDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SelfTalk Watch AppDebug.entitlements"; sourceTree = "<group>"; };
+		CD6F98C12BF8E23D00A8D73C /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
+		CD6F98C32BFA056B00A8D73C /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD2C29902BF6ED3100179518 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2C29B72BF7660E00179518 /* SDWebImageLottieCoder in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CD2C29862BF6ED3000179518 = {
+			isa = PBXGroup;
+			children = (
+				CD2C29972BF6ED3100179518 /* SelfTalk Watch App */,
+				CD2C298E2BF6ED3100179518 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CD2C298E2BF6ED3100179518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C298D2BF6ED3100179518 /* SelfTalk.app */,
+				CD2C29932BF6ED3100179518 /* SelfTalk Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD2C29972BF6ED3100179518 /* SelfTalk Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F98C02BF8DA2600A8D73C /* SelfTalk Watch AppDebug.entitlements */,
+				CD2C29BB2BF78F7000179518 /* Resource */,
+				CD2C29B82BF7663200179518 /* ViewModel */,
+				CD2C29B02BF75D3400179518 /* Helper */,
+				CD2C29AE2BF75CFA00179518 /* View */,
+				CD2C29982BF6ED3100179518 /* SelfTalkApp.swift */,
+				CD2C299C2BF6ED3200179518 /* Assets.xcassets */,
+				CD2C299E2BF6ED3200179518 /* Preview Content */,
+			);
+			path = "SelfTalk Watch App";
+			sourceTree = "<group>";
+		};
+		CD2C299E2BF6ED3200179518 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C299F2BF6ED3200179518 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CD2C29AE2BF75CFA00179518 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C299A2BF6ED3100179518 /* ContentView.swift */,
+				CD2C29B32BF75FD800179518 /* SelfTalkView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CD2C29B02BF75D3400179518 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C29B12BF75D5A00179518 /* Router.swift */,
+				CD6F98C32BFA056B00A8D73C /* TimerManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CD2C29B82BF7663200179518 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CD6F98C12BF8E23D00A8D73C /* HealthViewModel.swift */,
+				CD2C29B92BF7664500179518 /* LottieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CD2C29BB2BF78F7000179518 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CD2C29BC2BF78F9300179518 /* soundwave.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD2C298C2BF6ED3100179518 /* SelfTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2C29A72BF6ED3200179518 /* Build configuration list for PBXNativeTarget "SelfTalk" */;
+			buildPhases = (
+				CD2C298B2BF6ED3100179518 /* Resources */,
+				CD2C29A62BF6ED3200179518 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD2C29962BF6ED3100179518 /* PBXTargetDependency */,
+			);
+			name = SelfTalk;
+			productName = SelfTalk;
+			productReference = CD2C298D2BF6ED3100179518 /* SelfTalk.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		CD2C29922BF6ED3100179518 /* SelfTalk Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD2C29A32BF6ED3200179518 /* Build configuration list for PBXNativeTarget "SelfTalk Watch App" */;
+			buildPhases = (
+				CD2C298F2BF6ED3100179518 /* Sources */,
+				CD2C29902BF6ED3100179518 /* Frameworks */,
+				CD2C29912BF6ED3100179518 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SelfTalk Watch App";
+			packageProductDependencies = (
+				CD2C29B62BF7660E00179518 /* SDWebImageLottieCoder */,
+			);
+			productName = "SelfTalk Watch App";
+			productReference = CD2C29932BF6ED3100179518 /* SelfTalk Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD2C29872BF6ED3000179518 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					CD2C298C2BF6ED3100179518 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					CD2C29922BF6ED3100179518 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = CD2C298A2BF6ED3000179518 /* Build configuration list for PBXProject "SelfTalk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD2C29862BF6ED3000179518;
+			packageReferences = (
+				CD2C29B52BF7660E00179518 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */,
+			);
+			productRefGroup = CD2C298E2BF6ED3100179518 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD2C298C2BF6ED3100179518 /* SelfTalk */,
+				CD2C29922BF6ED3100179518 /* SelfTalk Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD2C298B2BF6ED3100179518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD2C29912BF6ED3100179518 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2C29A02BF6ED3200179518 /* Preview Assets.xcassets in Resources */,
+				CD2C29BD2BF78F9300179518 /* soundwave.json in Resources */,
+				CD2C299D2BF6ED3200179518 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD2C298F2BF6ED3100179518 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD2C29BA2BF7664500179518 /* LottieViewModel.swift in Sources */,
+				CD6F98C42BFA056B00A8D73C /* TimerManager.swift in Sources */,
+				CD6F98C22BF8E23D00A8D73C /* HealthViewModel.swift in Sources */,
+				CD2C299B2BF6ED3100179518 /* ContentView.swift in Sources */,
+				CD2C29B22BF75D5A00179518 /* Router.swift in Sources */,
+				CD2C29B42BF75FD800179518 /* SelfTalkView.swift in Sources */,
+				CD2C29992BF6ED3100179518 /* SelfTalkApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD2C29962BF6ED3100179518 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD2C29922BF6ED3100179518 /* SelfTalk Watch App */;
+			targetProxy = CD2C29952BF6ED3100179518 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CD2C29A12BF6ED3200179518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD2C29A22BF6ED3200179518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		CD2C29A42BF6ED3200179518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SelfTalk Watch App/SelfTalk Watch AppDebug.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SelfTalk Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = B4MA3ZSJ87;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SelfTalk;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Sharing this data allows us to provide personalized insights and support for your well-being. Your privacy is our priority, and we handle your information securely.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Our app updates your HealthKit data to ensure your sleep, mindful minutes, and state of mind records are accurate and up-to-date.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfadlims.SelfTalk.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		CD2C29A52BF6ED3200179518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SelfTalk Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = B4MA3ZSJ87;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SelfTalk;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Sharing this data allows us to provide personalized insights and support for your well-being. Your privacy is our priority, and we handle your information securely.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Our app updates your HealthKit data to ensure your sleep, mindful minutes, and state of mind records are accurate and up-to-date.";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfadlims.SelfTalk.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		CD2C29A82BF6ED3200179518 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4MA3ZSJ87;
+				INFOPLIST_KEY_CFBundleDisplayName = SelfTalk;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfadlims.SelfTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		CD2C29A92BF6ED3200179518 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B4MA3ZSJ87;
+				INFOPLIST_KEY_CFBundleDisplayName = SelfTalk;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alfadlims.SelfTalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD2C298A2BF6ED3000179518 /* Build configuration list for PBXProject "SelfTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2C29A12BF6ED3200179518 /* Debug */,
+				CD2C29A22BF6ED3200179518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2C29A32BF6ED3200179518 /* Build configuration list for PBXNativeTarget "SelfTalk Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2C29A42BF6ED3200179518 /* Debug */,
+				CD2C29A52BF6ED3200179518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD2C29A72BF6ED3200179518 /* Build configuration list for PBXNativeTarget "SelfTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD2C29A82BF6ED3200179518 /* Debug */,
+				CD2C29A92BF6ED3200179518 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CD2C29B52BF7660E00179518 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageLottieCoder.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CD2C29B62BF7660E00179518 /* SDWebImageLottieCoder */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CD2C29B52BF7660E00179518 /* XCRemoteSwiftPackageReference "SDWebImageLottieCoder" */;
+			productName = SDWebImageLottieCoder;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CD2C29872BF6ED3000179518 /* Project object */;
+}

@@ -14,7 +14,7 @@ class Router: ObservableObject {
     static var shared = Router()
 }
 
-enum Pages {
-    case selfTalk
+enum Pages: Hashable {
+    case selfTalk, audioPlayer(filename: String)
 }
 

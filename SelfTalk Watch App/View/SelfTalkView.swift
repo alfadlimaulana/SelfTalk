@@ -10,6 +10,8 @@ import SwiftUI
 struct SelfTalkView: View {
     @State var lottieFile: String = "soundwave"
     @State var timerManager: TimerManager = TimerManager()
+    
+    @StateObject var audioManager: AudioRecorder = AudioRecorder()
     @ObservedObject var viewModel: LottieViewModel = .init()
     @EnvironmentObject var healthManager: HealthViewModel
     
@@ -25,6 +27,7 @@ struct SelfTalkView: View {
         }
         .onAppear {
             timerManager.startTimer()
+            audioManager.startRecording()
         }
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
@@ -37,8 +40,9 @@ struct SelfTalkView: View {
             ToolbarItem(placement: .topBarTrailing) {
                 Button("Continue", systemImage: "checkmark", action: {
                     timerManager.stopTimer()
+//                    audioManager.stopRecording()
                     let mindfulMinutesInSeconds = (timerManager.durationCounter.minutes * 60)
-                    healthManager.saveMindfulMinutes(timerManager.durationCounter.seconds < 30 ? mindfulMinutesInSeconds : mindfulMinutesInSeconds + 1)
+                    healthManager.saveMindfulMinutes(timerManager.durationCounter.seconds < 30 ? mindfulMinutesInSeconds : mindfulMinutesInSeconds + 60)
                     Router.shared.path.removeAll()
                 })
                 .foregroundColor(.white)

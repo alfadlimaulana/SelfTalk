@@ -10,9 +10,12 @@ import SwiftUI
 @main
 struct SelfTalk_Watch_AppApp: App {
     @StateObject var healthManager = HealthViewModel()
+    @StateObject var audioPlayerManager = AudioPlayer()
     var body: some Scene {
         WindowGroup {
             ContentView()
-        }.environmentObject(healthManager)
+        }
+        .environmentObject(healthManager)
+        .environmentObject(audioPlayerManager)
     }
 }

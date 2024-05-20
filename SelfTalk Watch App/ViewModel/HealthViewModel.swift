@@ -51,19 +51,22 @@ class HealthViewModel: NSObject, ObservableObject {
                                 sortDescriptors: nil) { query, samples, error in
 
         guard let samples = samples as? [HKCategorySample] else {
-            self.totalMindfulMinutesToday = 0
+            DispatchQueue.main.async {
+                self.totalMindfulMinutesToday = 0
+            }
           return
         }
 
         var totalMinutes = 0
 
         for sample in samples {
-            print(samples)
             let minutes = sample.endDate.timeIntervalSince(sample.startDate) / 60
             totalMinutes += Int(minutes)
         }
 
-          self.totalMindfulMinutesToday = totalMinutes
+          DispatchQueue.main.async {
+              self.totalMindfulMinutesToday = totalMinutes
+          }
       }
 
       HKHealthStore().execute(query)

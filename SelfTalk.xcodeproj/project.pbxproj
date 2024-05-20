@@ -19,6 +19,9 @@
 		CD2C29BD2BF78F9300179518 /* soundwave.json in Resources */ = {isa = PBXBuildFile; fileRef = CD2C29BC2BF78F9300179518 /* soundwave.json */; };
 		CD6F98C22BF8E23D00A8D73C /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F98C12BF8E23D00A8D73C /* HealthViewModel.swift */; };
 		CD6F98C42BFA056B00A8D73C /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F98C32BFA056B00A8D73C /* TimerManager.swift */; };
+		CD6F98C82BFA28A900A8D73C /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F98C72BFA28A900A8D73C /* AudioRecorder.swift */; };
+		CDEF14002BFB0BD5003C74A5 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF13FF2BFB0BD5003C74A5 /* AudioPlayerView.swift */; };
+		CDEF14022BFB0E46003C74A5 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEF14012BFB0E46003C74A5 /* AudioPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		CD6F98C02BF8DA2600A8D73C /* SelfTalk Watch AppDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SelfTalk Watch AppDebug.entitlements"; sourceTree = "<group>"; };
 		CD6F98C12BF8E23D00A8D73C /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
 		CD6F98C32BFA056B00A8D73C /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		CD6F98C72BFA28A900A8D73C /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		CDEF13FF2BFB0BD5003C74A5 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
+		CDEF14012BFB0E46003C74A5 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 		CD2C29972BF6ED3100179518 /* SelfTalk Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				CD6F98C92BFA301100A8D73C /* Model */,
 				CD6F98C02BF8DA2600A8D73C /* SelfTalk Watch AppDebug.entitlements */,
 				CD2C29BB2BF78F7000179518 /* Resource */,
 				CD2C29B82BF7663200179518 /* ViewModel */,
@@ -118,6 +125,7 @@
 			children = (
 				CD2C299A2BF6ED3100179518 /* ContentView.swift */,
 				CD2C29B32BF75FD800179518 /* SelfTalkView.swift */,
+				CDEF13FF2BFB0BD5003C74A5 /* AudioPlayerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -127,6 +135,8 @@
 			children = (
 				CD2C29B12BF75D5A00179518 /* Router.swift */,
 				CD6F98C32BFA056B00A8D73C /* TimerManager.swift */,
+				CD6F98C72BFA28A900A8D73C /* AudioRecorder.swift */,
+				CDEF14012BFB0E46003C74A5 /* AudioPlayer.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -146,6 +156,13 @@
 				CD2C29BC2BF78F9300179518 /* soundwave.json */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		CD6F98C92BFA301100A8D73C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +275,10 @@
 				CD6F98C22BF8E23D00A8D73C /* HealthViewModel.swift in Sources */,
 				CD2C299B2BF6ED3100179518 /* ContentView.swift in Sources */,
 				CD2C29B22BF75D5A00179518 /* Router.swift in Sources */,
+				CDEF14002BFB0BD5003C74A5 /* AudioPlayerView.swift in Sources */,
 				CD2C29B42BF75FD800179518 /* SelfTalkView.swift in Sources */,
+				CDEF14022BFB0E46003C74A5 /* AudioPlayer.swift in Sources */,
+				CD6F98C82BFA28A900A8D73C /* AudioRecorder.swift in Sources */,
 				CD2C29992BF6ED3100179518 /* SelfTalkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,6 +423,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = SelfTalk;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Sharing this data allows us to provide personalized insights and support for your well-being. Your privacy is our priority, and we handle your information securely.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Our app updates your HealthKit data to ensure your sleep, mindful minutes, and state of mind records are accurate and up-to-date.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Out app uses microphone to record your self-talk";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -435,6 +456,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = SelfTalk;
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "Sharing this data allows us to provide personalized insights and support for your well-being. Your privacy is our priority, and we handle your information securely.";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Our app updates your HealthKit data to ensure your sleep, mindful minutes, and state of mind records are accurate and up-to-date.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Out app uses microphone to record your self-talk";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (

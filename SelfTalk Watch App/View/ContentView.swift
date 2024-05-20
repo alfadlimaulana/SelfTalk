@@ -10,10 +10,11 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var path = Router.shared
     @EnvironmentObject var healthManager: HealthViewModel
+    @StateObject var audioPlayerManager: AudioPlayer = AudioPlayer()
     
     var body: some View {
-        TabView {
-            NavigationStack(path: $path.path){
+        NavigationStack(path: $path.path){
+            TabView {
                 ScrollView {
                     VStack (alignment: .leading, spacing: 4) {
                         Text("What’s On Your mind?")
@@ -40,11 +41,49 @@ struct ContentView: View {
                 .navigationTitle {
                     Text("Reflect").foregroundStyle(.mint)
                 }
-                .navigationDestination(for: Pages.self) { page in
-                    switch page {
-                    case .selfTalk:
-                        SelfTalkView()
+                .onAppear {
+                    healthManager.getTotalMindfulMinutesForToday()
+                }
+                HStack {
+                    VStack (alignment: .leading) {
+                        Text("Mindfulness")
+                            .foregroundStyle(.mint)
+                        Text("\(healthManager.totalMindfulMinutesToday) Minutes")
+                            .font(.system(size: 28, weight: .semibold))
+                        Text("TODAY")
+                            .font(.system(size: 12))
+                            .foregroundStyle(.gray)
                     }
+                    Spacer()
+                }
+                VStack (alignment: .leading) {
+                    HStack {
+                        Text("Today's records")
+                        Spacer()
+                    }
+                        .foregroundStyle(.mint)
+                    List {
+                        ForEach(audioPlayerManager.audioFiles, id: \.self) { filename in
+                            Button {
+                                Router.shared.path.append(.audioPlayer(filename: filename))
+                            } label: {
+                                Text(filename)
+                            }
+
+                        }
+                    }
+                }
+                .onAppear {
+                    audioPlayerManager.getFilesForToday()
+                }
+            }
+            .tabViewStyle(.verticalPage)
+            .navigationDestination(for: Pages.self) { page in
+                switch page {
+                case .selfTalk:
+                    SelfTalkView()
+                case .audioPlayer(let filename):
+                    AudioPlayerView(audioFileName: filename)
                 }
             }
         }

@@ -17,6 +17,10 @@
 		CD2C29B72BF7660E00179518 /* SDWebImageLottieCoder in Frameworks */ = {isa = PBXBuildFile; productRef = CD2C29B62BF7660E00179518 /* SDWebImageLottieCoder */; };
 		CD2C29BA2BF7664500179518 /* LottieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2C29B92BF7664500179518 /* LottieViewModel.swift */; };
 		CD2C29BD2BF78F9300179518 /* soundwave.json in Resources */ = {isa = PBXBuildFile; fileRef = CD2C29BC2BF78F9300179518 /* soundwave.json */; };
+		CD5DA59D2BFCA95C005F9AC2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DA59C2BFCA95C005F9AC2 /* HomeView.swift */; };
+		CD5DA59F2BFCA99D005F9AC2 /* MindfulMinutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DA59E2BFCA99D005F9AC2 /* MindfulMinutesView.swift */; };
+		CD5DA5A12BFCA9F2005F9AC2 /* AudioFilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DA5A02BFCA9F2005F9AC2 /* AudioFilesView.swift */; };
+		CD5DA5A32BFCCC3D005F9AC2 /* SleepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5DA5A22BFCCC3D005F9AC2 /* SleepView.swift */; };
 		CD6F98C22BF8E23D00A8D73C /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F98C12BF8E23D00A8D73C /* HealthViewModel.swift */; };
 		CD6F98C42BFA056B00A8D73C /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F98C32BFA056B00A8D73C /* TimerManager.swift */; };
 		CD6F98C82BFA28A900A8D73C /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6F98C72BFA28A900A8D73C /* AudioRecorder.swift */; };
@@ -59,6 +63,10 @@
 		CD2C29B32BF75FD800179518 /* SelfTalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfTalkView.swift; sourceTree = "<group>"; };
 		CD2C29B92BF7664500179518 /* LottieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewModel.swift; sourceTree = "<group>"; };
 		CD2C29BC2BF78F9300179518 /* soundwave.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = soundwave.json; sourceTree = "<group>"; };
+		CD5DA59C2BFCA95C005F9AC2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CD5DA59E2BFCA99D005F9AC2 /* MindfulMinutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulMinutesView.swift; sourceTree = "<group>"; };
+		CD5DA5A02BFCA9F2005F9AC2 /* AudioFilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFilesView.swift; sourceTree = "<group>"; };
+		CD5DA5A22BFCCC3D005F9AC2 /* SleepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepView.swift; sourceTree = "<group>"; };
 		CD6F98C02BF8DA2600A8D73C /* SelfTalk Watch AppDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SelfTalk Watch AppDebug.entitlements"; sourceTree = "<group>"; };
 		CD6F98C12BF8E23D00A8D73C /* HealthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthViewModel.swift; sourceTree = "<group>"; };
 		CD6F98C32BFA056B00A8D73C /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
@@ -126,6 +134,10 @@
 				CD2C299A2BF6ED3100179518 /* ContentView.swift */,
 				CD2C29B32BF75FD800179518 /* SelfTalkView.swift */,
 				CDEF13FF2BFB0BD5003C74A5 /* AudioPlayerView.swift */,
+				CD5DA59C2BFCA95C005F9AC2 /* HomeView.swift */,
+				CD5DA59E2BFCA99D005F9AC2 /* MindfulMinutesView.swift */,
+				CD5DA5A02BFCA9F2005F9AC2 /* AudioFilesView.swift */,
+				CD5DA5A22BFCCC3D005F9AC2 /* SleepView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,9 +284,13 @@
 			files = (
 				CD2C29BA2BF7664500179518 /* LottieViewModel.swift in Sources */,
 				CD6F98C42BFA056B00A8D73C /* TimerManager.swift in Sources */,
+				CD5DA59F2BFCA99D005F9AC2 /* MindfulMinutesView.swift in Sources */,
 				CD6F98C22BF8E23D00A8D73C /* HealthViewModel.swift in Sources */,
+				CD5DA5A12BFCA9F2005F9AC2 /* AudioFilesView.swift in Sources */,
 				CD2C299B2BF6ED3100179518 /* ContentView.swift in Sources */,
 				CD2C29B22BF75D5A00179518 /* Router.swift in Sources */,
+				CD5DA59D2BFCA95C005F9AC2 /* HomeView.swift in Sources */,
+				CD5DA5A32BFCCC3D005F9AC2 /* SleepView.swift in Sources */,
 				CDEF14002BFB0BD5003C74A5 /* AudioPlayerView.swift in Sources */,
 				CD2C29B42BF75FD800179518 /* SelfTalkView.swift in Sources */,
 				CDEF14022BFB0E46003C74A5 /* AudioPlayer.swift in Sources */,
